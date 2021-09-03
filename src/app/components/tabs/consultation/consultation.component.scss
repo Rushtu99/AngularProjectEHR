@@ -1,0 +1,81 @@
+.container {
+  margin-top: 1rem;
+  height: 60vh;
+  background-color:#f2f2f2;
+  transform: translate3d(0px, 0px, 0px);visibility: visible;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  
+}
+
+.fix{
+  transform: translate3d(0px, 0px, 0px);
+  visibility: visible;
+}
+
+.right {
+  position: absolute;
+  left: 10rem;
+  margin-top: 1rem;
+}
+.drawer {
+  margin-left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:#f2f2f2;
+}
+
+.btn {
+  padding: 5px;
+  border: 1px solid rgb(200, 200, 200);
+  margin-top: 20px;
+  background-color: white;
+}
+
+.h {
+  color: #007bff;
+}
+
+input,
+textarea {
+  padding: 1px;
+  outline: none;
+}
+
+#items {
+  width: 30rem;
+}
+
+.c {
+  align-content: center;
+  border:solid rgb(209, 209, 209) 1px;
+  border-radius: 5px;
+  width: auto;
+  outline: none;
+  border-radius: 5px;
+}
+
+.right {
+  position: relative;
+  left: 0;
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+.mat-button-toggle-checked {
+  background: linear-gradient(to right, #00bbff, #007bff);
+  color: beige;
+}
+
+.btn-smoke {
+  font-weight: bold;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 10px;
+  background-color: rgb(233, 233, 233);
+}

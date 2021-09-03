@@ -1,0 +1,90 @@
+
+<mat-sidenav-container class="container" >
+  <mat-sidenav class="fix" mode="side" opened >
+    <div class="drawer">
+      <button class="btn text" mat-button>New Consultation</button>
+      <button class="btn text" mat-button>Consultation History</button>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content style="padding:2rem;border: 1px solid rgb(209, 209, 209);border-radius: 10px;background-color:white;">
+    <h2 class="text h">New Consultation</h2>
+    <div class="content text">
+      <div class="row1" style="display: flex; align-items: center;">
+        <div>Chief Complaint:</div>
+
+        <div style="display: inline-flex" class="right">
+          <input class="text c" mat-input /> &nbsp; &nbsp; 
+
+          <button class="c btn-smoke" mat-button>Accept</button>
+          &nbsp; &nbsp;  for &nbsp; &nbsp; 
+
+          <input class="text c" mat-input />
+          &nbsp; &nbsp; 
+
+      
+            <select class="c" id="items">
+              <option value="item-1">Item 1</option>
+              <option value="item-2">Item 2</option>
+              <option value="item-3">Item 3</option>
+              <option value="item-4">Item 4</option>
+            </select>
+        </div>
+      </div>
+      <div class="row2" style="display: flex">
+        <div>Notes:</div>
+        <div class="right">
+      
+          <textarea
+            class="text c"
+            name="paragraph_text"
+            cols="50"
+            rows="10"
+          ></textarea>
+    
+        </div>
+      </div>
+      <div class="row3" style="display: flex">
+        <div>History Notes:</div>
+        <div class="right">
+          <textarea
+            class="text c"
+            name="paragraph_text"
+            cols="50"
+            rows="1"
+          ></textarea>
+        </div>
+      </div>
+      <div class="row4" style="display: flex">
+        <div>Examination Notes:</div>
+        <div class="right">
+          <textarea
+            class="text c"
+            name="paragraph_text"
+            cols="50"
+            rows="1"
+          ></textarea>
+          </div>
+
+      </div>
+      <div class="row5" style="display: flex">
+        <div>Smoking History:</div>
+        <div style="display:flex;flex-direction:row;position: absolute; left:16rem">
+          <mat-button-toggle-group style="border:none" [(ngModel)]="SmokingStatus">
+          <mat-button-toggle class="btn-smoke" style="margin-right: 30px" value="yes" mat-button >YES</mat-button-toggle>
+          <mat-button-toggle class="btn-smoke" style="margin-left: 30px;" value="no" mat-button >NO</mat-button-toggle>
+        </mat-button-toggle-group>
+          </div>
+
+      </div>
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<div style="margin-top: auto;margin-bottom: 0;margin-left: auto;display: flex;flex-direction: row-reverse;">
+  <button mat-button class="grad" style="color: beige; font-weight: bold;"
+      (click)="nextStep()">
+      Next
+  </button>
+</div>
+

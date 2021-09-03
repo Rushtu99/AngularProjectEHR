@@ -1,0 +1,72 @@
+<div class="wrap">
+    <div class="patient-header">
+        <div class="patient-img">
+            <img src="http://via.placeholder.com/150x70" />
+        </div>
+        <div class="patient-info text">
+            <div style="display: flex">
+                Patient: &nbsp;
+                <div style="color: #007bff">Phil Belford</div>
+            </div>
+            <div>DOB: 1972-02-09 &nbsp; Age: 49</div>
+        </div>
+        <div class="ad">
+            <img src="http://via.placeholder.com/600x70" />
+        </div>
+    </div>
+    <div class="container">
+        <mat-card style="padding: 10px; min-height: 35rem;display:flex;flex-direction: column;background-color:#f2f2f2;height: auto;">
+            <mat-tab-group [selectedIndex]="step.value" (selectedIndexChange)="step.setValue($event)">
+                <mat-tab label="Dashboard">
+                    <mat-accordion multi>
+                        <app-dashboard (next) = "nextStep()"></app-dashboard>
+                    </mat-accordion>
+                </mat-tab>
+
+                <mat-tab label="Consultation">
+                    <mat-accordion multi>
+                        <app-consultation (next)="nextStep()"></app-consultation>
+                    </mat-accordion>
+                </mat-tab>
+
+                <mat-tab label="Procedures">
+                    <mat-accordion multi>
+                        <app-procedures (next) = "nextStep()"></app-procedures>
+                    </mat-accordion>
+                </mat-tab>
+
+                <mat-tab label="Diagnosis">
+                    <mat-accordion multi>
+                        <app-diagnosis (next) = "nextStep()"></app-diagnosis>
+                    </mat-accordion>
+                </mat-tab>
+
+                <mat-tab label="Prescription">
+                    <mat-accordion multi>
+                        <app-prescription [input]="temp" [status]="status" (sub)="submit()" (dispO)="closeMedication()" *ngIf="disp"></app-prescription>
+                        <app-new-medication  (update)="updateMedication($event)" (close)="toggleChild()" *ngIf="!disp"></app-new-medication>
+                    </mat-accordion>
+                </mat-tab>
+
+            </mat-tab-group>
+            <!-- <div style="margin-top: auto;margin-bottom: 0;margin-left: auto;">
+                <button mat-button class="grad" style="color: beige; font-weight: bold;" *ngIf="this.step.value < 4"
+                    (click)="nextStep()">
+                    Next
+                </button>
+                <button mat-button class="grad" style="color: beige; font-weight: bold;margin:10px" *ngIf="this.step.value === 4 && disp"
+                    (click)="submit()">
+                    Process Medication
+                </button>
+                <button mat-button class="grad" style="color: beige; font-weight: bold;margin:10px" *ngIf="this.step.value === 4 && !disp"
+                    (click)="updateMedication()">
+                    Update
+                </button>
+                <button mat-button class="grad" style="color: beige; font-weight: bold;margin:10px" *ngIf="this.step.value === 4 && !disp"
+                    (click)="closeMedication()">
+                    Close
+                </button>
+            </div> -->
+        </mat-card>
+    </div>
+</div>

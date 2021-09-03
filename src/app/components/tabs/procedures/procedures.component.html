@@ -1,0 +1,77 @@
+<div class="container">
+
+    <div class="first-row">
+        <div class="row h text">
+            Laboratory
+        </div>
+        <mat-form-field >
+            <mat-select class="text">
+              <mat-option class="text" *ngFor="let test of Lab" [value]="test">
+                {{test}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div class="second-row text">
+        <div class="row h">
+            Panel
+        </div>
+        <div class="row">
+            <div class="block"><input type="checkbox">Complete Blood Count(CBC)</div>
+            <div class="block"><input type="checkbox">Fibrinogen</div>
+            <div class="block"><input type="checkbox">Platlet</div>
+        </div>
+        <div class="row">
+            <div class="block"><input type="checkbox">Factor V assay</div>
+            <div class="block"><input type="checkbox">Prothrrbin time(PT or PT-INR)</div>
+            <div class="block"><input type="checkbox">Lymphocyte</div>
+        </div>
+        <div class="row">
+            <div class="block"><input type="checkbox">Routine Blood</div>
+            <div class="block"><input type="checkbox">Haemogram</div>
+            <div class="block"><input type="checkbox">Basophil</div>
+        </div>
+        <div class="row">
+            <div class="block"><input type="checkbox">TLC</div>
+            <div class="block"><input type="checkbox">CBC</div>
+            <div class="block"><input type="checkbox">Total Leucocyte</div>
+        </div>
+        <div class="row">
+            <div class="block"><input type="checkbox">APTT</div>
+            <div class="block"><input type="checkbox">Blood Banking</div>
+        </div>
+        <div class="row">
+            <div class="block"><input type="checkbox">ANC Blood</div>
+            <div class="block"><input type="checkbox">RBC indices</div>
+        </div>
+
+        <div class="row h">
+            Tests
+        </div>
+
+        <div class="row">
+            <div class="block"><input type="checkbox">Coronary Anigiogram</div>
+            <div class="block"><input type="checkbox">Echocardiogram</div>
+            <div class="block"><input type="checkbox">Stress test</div>
+        </div>
+        <div class="row">
+            <div class="block"><input type="checkbox">Cross Match</div>
+            <div class="block"><input type="checkbox">Differential count</div>
+            <div class="block"><input type="checkbox">Lymphocyte</div>
+        </div>
+    </div>
+
+    <div class=" third-row">
+        <div>
+            <img src="http://via.placeholder.com/200x550">
+        </div>
+    </div>
+</div>
+
+
+<div style="margin-top: auto;margin-bottom: 0;margin-left: auto;display: flex;flex-direction: row-reverse;">
+    <button mat-button class="grad" style="color: beige; font-weight: bold;" (click)="nextStep()">
+        Next
+    </button>
+</div>

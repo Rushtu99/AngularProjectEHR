@@ -1,0 +1,36 @@
+<div> 
+	<img src="http://via.placeholder.com/300x150"> 
+</div> 
+
+<mat-dialog-content class="container text">
+
+    <div class="head text">Log In</div><br>
+    <div class="faint"> Only for authorised users</div><br><br>
+
+    <form class = "input" #data = "ngForm" (ngSubmit) = "onClickSubmit(data)">
+
+        <mat-form-field>
+            <label for="uname">Username</label>
+            <input matInput type="text" name="username" ngModel>
+        </mat-form-field>
+
+        <mat-form-field >
+            <label for="psw">Password</label>
+            <input matInput [type]="hide? 'password' : 'text'">
+
+            <button class="hide-btn grad" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            
+        </mat-form-field>
+
+        <button class="grad text" type="submit">Login</button>
+
+    </form>
+</mat-dialog-content>
+
+<div class="ad"> 
+	<img src="http://via.placeholder.com/200x700"> 
+</div> 
+
+

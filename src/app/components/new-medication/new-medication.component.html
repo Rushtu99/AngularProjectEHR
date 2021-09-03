@@ -1,0 +1,192 @@
+<div style="display: flex">
+    <div class="main">
+        <div class="cont">
+            <form #data="ngForm">
+                <div class="row">
+                    <div class="ribbon">
+                        <div>Selected Medication</div>
+                        <div style="margin-right:10px;margin-left:auto;font-size: 14px;">Monograph Leaflet</div>
+                    </div>
+                    <div style="display:flex">
+                        <div class="text2">
+                            Brilinta 90 MG Oral Tablet
+                        </div>
+                        <div class="left-text">
+                            Type: Brand,Rx &nbsp;&nbsp; Formularity:UKN &nbsp;&nbsp; View Coverage
+                        </div>
+                    </div>
+                    <div style="height:20px; border-bottom:1px rgb(184, 184, 184) solid;margin-top: 5px;display: flex;">
+                        <div class="left-text"> <input type="checkbox"> jkvs;dlfgjbkl</div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="ribbon">
+                        <div>Sig Information</div>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <div class="display-tab">Action</div>
+                        <div class="display-tab">Amount</div>
+                        <div class="display-tab">Dosage Form</div>
+                        <div class="display-tab">Route</div>
+                        <div class="display-tab">Frequency</div>
+                    </div>
+                    <div ngModelGroup="direction" style="display: flex;justify-content: center;margin-top: 10px;">
+                        <select ngModel name="action" class="text display-select">
+                            <option value="Action 1">Action 1</option>
+                            <option value="Action 2">Action 2</option>
+                            <option value="Action 3">Action 3</option>
+                            <option value="Action 4">Action 4</option>
+                        </select>
+                        <select ngModel name="amount" class="text display-select">
+                            <option value="Amount 1">Amount 1</option>
+                            <option value="Amount 2">Amount 2</option>
+                            <option value="Amount 3">Amount 3</option>
+                            <option value="Amount 4">Amount 4</option>
+                        </select>
+                        <select ngModel name="dosage" class="text display-select">
+                            <option value="Dosage 1">Dosage 1</option>
+                            <option value="Dosage 2">Dosage 2</option>
+                            <option value="Dosage 3">Dosage 3</option>
+                            <option value="Dosage 4">Dosage 4</option>
+                        </select>
+                        <select ngModel name="route" class="text display-select">
+                            <option value="Route 1">Route 1</option>
+                            <option value="Route 2">Route 2</option>
+                            <option value="Route 3">Route 3</option>
+                            <option value="Route 4">Route 4</option>
+                        </select>
+                        <select ngModel name="frequency" class="text display-select">
+                            <option value="Frequency 1">Frequency 1</option>
+                            <option value="Frequency 2">Frequency 2</option>
+                            <option value="Frequency 3">Frequency 3</option>
+                            <option value="Frequency 4">Frequency 4</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div style="display: flex;">
+                        Additional Direction:
+                        <div style="margin-left: 8px;flex:1 1 80%;">
+                            <input ngModel name="additionalDirection" class="text c" style="width: 98%">
+                        </div>
+                    </div>
+                    <div style="height:30px;margin-top: 5px;display: flex;">
+                        <div class="left-text">
+                            <button mat-button> Take as needed/reset/clear</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div ngModelGroup="patientDirection" class="row">
+                    <div style="display: flex;">
+                        Patient Direction:
+                        <div style="margin-left: 27px;flex:1 1 80%;margin-right:1rem;display:flex">
+                            <div style="width:47%;display: flex;">
+                                <textarea ngModel name="description" class="text c" rows="5" style="width: 100%"></textarea>
+                            </div>
+
+                            <div style="width: 47%;margin-left: 1rem;display: flex;flex-direction: column;">
+                                <div class="row">
+                                    Days Supply:&nbsp;
+                                    <input ngModel name="supply1" class="text c" style="margin-left: 2rem;" id="items"> &nbsp;
+                                    or &nbsp;
+                                    <input ngModel name="supply2" class="text c" id="items">
+                                </div>
+                                <div class="row">
+                                    Dispense Amount: &nbsp;
+                                    <input ngModel name="dispenseAmount" class="text c" style="width: 5rem;"> &nbsp;
+                                    <select ngModel name="amountType" class="text c" id="items">
+                                        <option value="Amount 1">AmountType 1</option>
+                                        <option value="Amount 2">AmountType 2</option>
+                                        <option value="Amount 3">AmountType 3</option>
+                                        <option value="Amount 4">AmountType 4</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    Refills:&nbsp;
+                                    <input ngModel name="refills" class="text c" style="width: 5rem;margin-left: 5rem;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div style="display: flex;">
+                        Problem/Dx:
+                        <div style="margin-left: 56px;flex:1 1 80%;">
+                            <select ngModel name="problem" class="text c" style="width:98%">
+                                <option value="Problem 1">Problem 1</option>
+                                <option value="Problem 2">Problem 2</option>
+                                <option value="Problem 3">Problem 3</option>
+                                <option value="Problem 4">Problem 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" ngModelGroup="Pharmacy">
+                    <div style="display: flex;">
+                        Pharmacy Notes:
+                        <div style="margin-left: 27px;flex:1 1 80%;margin-right:1rem;display:flex">
+                            <div style="width:47%;display: flex;">
+                                <textarea ngModel name="description" class="text c" rows="5" style="width: 100%"></textarea>
+                            </div>
+
+                            <div style="width: 47%;margin-left: 1rem;display: flex;flex-direction: column;">
+                                <div class="row" style="display:flex;align-items: center;">
+                                    <input ngModel name="storeSig" type="checkbox"> &nbsp; Store Sig & Add to Prescriber's List
+                                </div>
+                                <div class="row">
+                                    <input ngModel name="DAW/DNS" type="checkbox">&nbsp; DAW/DNS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="ribbon">
+                        <div>Alternative Medication</div>
+                        <div style="margin-right:10px;margin-left:auto;font-size: 14px;">Monograph Leaflet</div>
+                    </div>
+                    <div style="display:flex">
+                        <div class="text2">
+                            Plavix 75 MG Oral Tablet
+                        </div>
+                        <div class="left-text">
+                            Type: Brand,Rx &nbsp;&nbsp; Formularity:UKN &nbsp;&nbsp; View Coverage
+                        </div>
+                    </div>
+                    <div style="height:20px; border-bottom:1px rgb(184, 184, 184) solid;margin-top: 5px;display: flex;">
+                        <div class="left-text"><input type="checkbox"> jkvs;dlfgjbkl</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div style="margin-top: auto;margin-bottom: 0;margin-left: auto;display: flex; flex-direction: row-reverse;">
+            <button mat-button class="grad" style="color: beige; font-weight: bold;margin:10px"
+                (click)="closeMedication()">
+                Close
+            </button>
+            <button mat-button class="grad" style="color: beige; font-weight: bold;margin:10px"
+                (click)="updateMedication(data.value)">
+                Update
+            </button>
+        </div>
+    </div>
+    <div class="AD">
+        <div style="margin: 10px">
+            <img src="http://via.placeholder.com/200x300" />
+        </div>
+        <div style="margin: 10px">
+            <img src="http://via.placeholder.com/200x300" />
+        </div>
+    </div>
+</div>

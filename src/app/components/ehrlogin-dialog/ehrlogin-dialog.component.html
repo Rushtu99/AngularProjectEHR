@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="head">  EHR Log in</div><br><br>
+      <div class="faint">Only for Ogilvy users</div>
+
+    <form class = "passform" #data = "ngForm" (ngSubmit) = "onClickSubmit(data)">
+
+        <mat-form-field appearance="legacy">
+            <label for="uname">Username</label>
+            <input class ="input" matInput type="text" name="username" ngModel>
+        </mat-form-field>
+
+        <mat-form-field >
+            <label for="psw">Password</label>
+            <input class ="input" matInput [type]="hide? 'password' : 'text'">
+
+            <button class="hide-btn grad" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <button class="submit text grad" type="submit">Log In</button>
+
+    </form>
+</div>

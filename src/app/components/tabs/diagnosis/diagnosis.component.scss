@@ -1,0 +1,35 @@
+.demo-table {
+  width: 99%;
+  margin: 5px;
+  margin-top: 30px;;
+}
+
+.mat-column-demo-position {
+  width: 32px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.mat-column-demo-name {
+  padding-left: 16px;
+  font-size: 20px;
+}
+
+.mat-column-demo-weight {
+  font-style: bold;
+}
+
+.mat-column-demo-symbol {
+  width: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.head{
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.grad{
+  background: linear-gradient( to right,#00bbff,#007bff) ;
+}

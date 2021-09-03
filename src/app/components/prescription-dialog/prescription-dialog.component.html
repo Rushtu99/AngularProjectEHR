@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="b1" style="display: flex">
+        <div class="head">Add/Edit Issue</div>
+        <br /><br />
+        <button (click)="close()" class="text" style="
+        margin-left: auto;
+        color: black;
+        padding: 0;
+        border: 0;
+        width: 20px;
+        height: 20px;
+        background: none;
+        font-weight: bold;
+      ">
+            X
+        </button>
+    </div>
+    <form  class="passform b1" #data="ngForm">
+        <div class="row">
+            <div class="left">Problem:</div>
+            <div class="right">
+                <input ngModel name="Problem" class="text c" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left">Title:</div>
+            <div class="right">
+                <input ngModel name="Title" class="text c" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">Coding:</div>
+            <div class="right">
+                <textarea ngModel name="Coding" class="text c" cols="21" rows="6"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="left"></div>
+            <div class="right">
+                <button style="margin-right: 1px" class="text grad c">Add</button>
+                <button style="margin-left: 1px" class="text grad c">Remove</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">Begin Date:</div>
+            <div class="right">
+                <input class="text c" ngModel name="BeginDate" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">End Date:</div>
+            <div class="right">
+                <input class="text c" ngModel name="EndDate" />
+            </div>
+        </div>
+        <button (click)="onClickSubmit(data.value)" class="submit text grad" type="submit">
+            Save
+        </button>
+    </form>
+</div>

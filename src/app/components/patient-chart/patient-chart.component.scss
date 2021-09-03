@@ -1,0 +1,35 @@
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    margin-left:10px;
+    margin-right:10px;
+    height: 95vh;
+    overflow: auto;
+    background-color:#f2f2f2;
+}
+
+.patient-header{
+    display:flex;
+    flex-direction: row;
+    padding:5px;
+}
+
+.patient-info{
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 500px;
+}
+
+.ad{
+    margin-left: 50px;
+}
+
+  :host ::ng-deep .mat-tab-body.mat-tab-body-active {
+    max-height: 80vh;
+    height: auto;
+  }
+
+.container{
+    width:auto;
+}

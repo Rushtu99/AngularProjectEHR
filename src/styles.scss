@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: helvetica, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+  
+.b1{
+    background-color: darkturquoise;
+    border: 1px solid black;
+}
+.b2{
+    background-color: rgb(209, 0, 157);
+    border: 1px solid black;
+}
+.b3{
+    background-color: rgb(153, 209, 0);
+    border: 1px solid black;
+}
+::ng-deep .mat-input-underline {
+    display: none;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+
+.faint{
+    color:#3d3d3d;
+    opacity: 0.8;
+}
+.grad{
+    background: linear-gradient( to right,#15beee,#4679ed) ;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button{
+    min-width: unset!important;
+}
+
+html{
+    background-color:#f2f2f2;
+}
+
+.dialog{
+    height: 600px;
+    width: 500px;
+    overflow:hidden;
+    border-radius: 10px;
+}
+.c {
+    align-content: center;
+    border:solid rgb(209, 209, 209) 1px;
+    border-radius: 5px;
+    width: auto;
+    outline: none;
+    border-radius: 5px;
+  }
+
+.text{
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-stretch: normal;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: rgb(24, 24, 24);
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

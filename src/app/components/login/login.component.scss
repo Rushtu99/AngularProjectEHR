@@ -1,0 +1,64 @@
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.hide-btn{
+    position: absolute;
+    top:12px;
+    left: -40px;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+ 
+}
+
+.input{
+    margin-top: auto;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.head {
+    font-size: 50px;
+}
+
+.container{
+    background-color: white;
+    color: black; 
+    top: 40vh;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.ad {
+    position: absolute;
+    position:absolute;
+    top: 25vh;
+    right:10px;
+}

@@ -1,0 +1,88 @@
+:root {
+    --fc-small-font-size: .85em;
+    --fc-page-bg-color: #fff;
+    --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
+    --fc-neutral-text-color: #808080;
+    --fc-border-color: #ddd;
+  
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: #2C3E50;
+    --fc-button-border-color: #2C3E50;
+    --fc-button-hover-bg-color: #1e2b37;
+    --fc-button-hover-border-color: #1a252f;
+    --fc-button-active-bg-color: #1a252f;
+    --fc-button-active-border-color: #151e27;
+  
+    --fc-event-bg-color: rgb(163, 17, 61);
+    --fc-event-border-color: #b40fc0;
+    --fc-event-text-color: #fff;
+    --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
+  
+    --fc-more-link-bg-color: #d0d0d0;
+    --fc-more-link-text-color: inherit;
+  
+    --fc-event-resizer-thickness: 8px;
+    --fc-event-resizer-dot-total-width: 8px;
+    --fc-event-resizer-dot-border-width: 1px;
+  
+    --fc-non-business-color: rgba(215, 215, 215, 0.3);
+    --fc-bg-event-color: rgb(143, 223, 130);
+    --fc-bg-event-opacity: 0.3;
+    --fc-highlight-color: rgba(188, 232, 241, 0.3);
+    --fc-today-bg-color: rgba(255, 220, 40, 0.15);
+    --fc-now-indicator-color: red;
+  }
+
+.container{
+    // border: 1px solid black;
+    height:90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.top{
+    display:flex;
+    order:-1;
+    flex: 1 1 100%;
+    // border: 1px solid black;
+    // background-color: darkred;
+    height:15%;
+    padding: 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+.first-row{
+    // background-color: darkseagreen;
+    // border: 1px solid black;
+    flex: 0 1 15%;
+    height:80%;
+    padding: 20px;
+    margin: 0;
+}
+
+.second-row{
+    // border: 1px solid black;
+    // background-color: darkturquoise;
+    flex:1 1 auto;
+    padding: 20px;
+    height:auto;
+    margin: 0;
+}
+
+.third-row{
+    // background-color: darkseagreen;
+    // border: 1px solid black;
+    flex:0 1 10%;
+    height:80%;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+
+
+}

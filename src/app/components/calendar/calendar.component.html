@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="top"> 
+        <div>
+            <img src ="http://via.placeholder.com/800x100">
+        </div>
+    </div>
+    <div class="first-row">
+        <div class="demo-inline-calendar-card" style="background-color: white;padding:2px;border-radius: 8px;">
+            <mat-calendar (selectedChange)="dateChange($event)"></mat-calendar>
+        </div>
+          <p>Selected date: {{selected}}</p>
+    </div>
+
+    <div class="second-row">
+        <div style="background-color: white;padding:2px;border-radius: 8px;">
+            <full-calendar id="cal" #calendar [options]="calendarOptions"></full-calendar>
+            <link href="../calendar/calendars.scss" rel="stylesheet">
+        </div>
+    </div>
+
+    <div class="third-row"> 
+        <div>
+            <img src ="http://via.placeholder.com/200x550"> 
+            <button (click)="handle()">CLICK</button>
+        </div>
+    </div>
+</div>
+
+

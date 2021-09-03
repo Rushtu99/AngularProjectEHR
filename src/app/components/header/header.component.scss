@@ -1,0 +1,35 @@
+.toolbar{
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    width:100%;
+    margin-right:10px;
+    color: black;
+    font-size: 40px;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    height:8vh;
+
+}
+
+
+input{
+    padding-left:10px;
+    padding-right:10px;
+    height:30px;
+    width:90%;
+    outline: none;
+}
+
+
+
+.example-form{
+    border: 1px solid black;
+    border-radius: 10px;
+    size: 30px;
+    height: 50px;
+    width: 50%;
+    position: absolute;
+    left: 400px;
+    display: flex;
+    align-items: center;
+}

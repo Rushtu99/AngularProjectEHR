@@ -1,0 +1,31 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav mode="side" class="sidenav  grad" opened>
+    <div  class="drawer">
+        <div id=1 (click)="clicked1($event)" [ngClass]="{'open':element==1}" class=" btn ">
+
+                <img style="pointer-events: none" src="http://via.placeholder.com/50x50">
+
+        </div>
+        <div  id=2 (click)="clicked2($event)" [ngClass]="{'open':element==2}" class=" btn ">
+
+                <img style="pointer-events: none" src="http://via.placeholder.com/50x50">
+
+        </div>
+        <div id=3 (click)="clicked3($event)" [ngClass]="{'open':element==3}" class=" btn ">
+
+                <img style="pointer-events: none" src="http://via.placeholder.com/50x50">
+
+        </div>
+        <div id=4 (click)="clicked4($event)" [ngClass]="{'open':element==4}" class=" btn " >
+
+                <img style="pointer-events: none" src="http://via.placeholder.com/50x50">
+
+        </div>
+    </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <app-calendar *ngIf="element==1"></app-calendar>
+        <app-patient-chart *ngIf="element==2"></app-patient-chart>
+  
+    </mat-sidenav-content>
+</mat-sidenav-container>
